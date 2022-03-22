@@ -1,0 +1,43 @@
+.scrollUp {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 250;
+
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+
+  background-color: var(--color-main-gray);
+  border: 1px solid var(--color-text-gray);
+  opacity: 0.6;
+  transition: var(--transition-default);
+  cursor: pointer;
+}
+
+.scrollUp::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 4px);
+
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+
+  border-width: 3px 0 0 3px;
+  border-style: solid;
+  border-color: var(--color-text-gray);
+
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.scrollUp:hover {
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .scrollUp {
+    bottom: 2.5rem;
+    right: 4.375rem;
+  }
+}

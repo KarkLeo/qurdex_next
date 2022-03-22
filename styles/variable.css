@@ -1,0 +1,79 @@
+:root {
+  /*colors*/
+  --color-main-white: #fff;
+  --color-main-gray: #272727;
+  --color-light-gray: #4a4a4a;
+  --color-main-blue: #74c4f0;
+  --color-text-gray: #aaa;
+
+  /*font family*/
+  --font-title: 'Patua One', serif;
+  --font-ordinary: 'Montserrat', sans-serif;
+
+  /*font size*/
+  --fs-text-1: 0.875rem;
+  --fs-text-2: 1rem;
+  --fs-text-3: 1.125rem;
+  --fs-subtitle-1: 1.125rem;
+  --fs-subtitle-2: 1.25rem;
+  --fs-subtitle-3: 1.5rem;
+  --fs-title-1: 2.5rem;
+
+  /*relative average*/
+  --view-average: calc(0.5vw + 0.5vh);
+
+  /*grid*/
+  --side-margin: 1rem;
+  --column-gap: 1rem;
+  --column-width: calc(
+    (100vw - (var(--column-gap) * 5 + var(--side-margin) * 2)) / 6
+  );
+  --row-height: 1rem;
+
+  /*transition*/
+  --transition-default: all 300ms ease-in-out;
+  --transition-background: background-position 15ms linear;
+}
+
+@media screen and (min-width: 600px) {
+  :root {
+    /*grid*/
+    --side-margin: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    /*font-size*/
+    --fs-text-1: 1rem;
+    --fs-text-2: 1.25rem;
+    --fs-text-3: 1.5rem;
+    --fs-subtitle-1: 1.5rem;
+    --fs-subtitle-2: 1.75rem;
+    --fs-subtitle-3: 2rem;
+    --fs-title-1: 3rem;
+
+    /*grid*/
+    --side-margin: 3.75rem;
+    --column-gap: 1.25rem;
+    --column-width: calc(
+      (100vw - (var(--column-gap) * 11 + var(--side-margin) * 2)) / 12
+    );
+    --row-height: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    /*font-size*/
+    --fs-text-2: 1.5rem;
+    --fs-text-3: 1.75rem;
+    --fs-subtitle-1: 1.875rem;
+    --fs-subtitle-2: 2rem;
+    --fs-subtitle-3: 2.5rem;
+    --fs-title-1: 4.0625rem;
+
+    /*grid*/
+    --side-margin: 8.333333rem;
+  }
+}

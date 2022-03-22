@@ -1,0 +1,100 @@
+.count {
+  position: relative;
+  width: 50%;
+}
+.count::before {
+  content: '';
+  padding-top: 100%;
+  float: left;
+}
+.count__border {
+  --border-size: 30.555555vw;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--border-size);
+  height: var(--border-size);
+  box-sizing: border-box;
+
+  transform: translate(-50%, -50%) rotate(45deg);
+  border: 0.25rem solid #ffffff;
+}
+.count__number {
+  font-family: 'Patua One', serif;
+  font-size: 8.333333vw;
+  color: var(--color-main-white);
+  line-height: 1em;
+}
+.count__number_percent {
+  font-size: 4.166666vw;
+}
+.count__text {
+  font-size: 3vw;
+  color: var(--color-main-white);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.272;
+}
+
+.count__content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+
+  user-select: none;
+}
+
+@media (min-width: 600px) {
+  .count {
+    width: 25%;
+  }
+  .count__border {
+    --border-size: 15.085937vw;
+  }
+  .count__number {
+    font-size: 5.208333vw;
+  }
+  .count__number_percent {
+    font-size: 3.90625vw;
+  }
+  .count__text {
+    font-size: 1.302083vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .count__border {
+    --border-size: 15.1789063vw;
+
+    border-width: 0.5rem;
+  }
+  .count__number {
+    font-size: 6.25vw;
+  }
+  .count__number_percent {
+    font-size: 4.6875vw;
+  }
+  .count__text {
+    font-size: 1.25vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .count__border {
+    --border-size: 12.5vw;
+  }
+  .count__number {
+    font-size: 6.25vw;
+  }
+  .count__number_percent {
+    font-size: 4.166666vw;
+  }
+  .count__text {
+    font-size: 1.041666vw;
+  }
+}

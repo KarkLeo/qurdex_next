@@ -1,0 +1,11 @@
+
+---
+
+contacts:
+  - label: d.quardex
+    href: skype:d.quardex?call
+    iconId: skype
+  - label: sales@quardex.com
+    href: mailto:sales@quardex.com
+    iconId: email
+

@@ -1,0 +1,24 @@
+.cloud__wrap {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  left: 0;
+
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+
+  /*Add clouds contrast*/
+  background-color: rgba(0, 0, 0, 0.25);
+
+  overflow: hidden;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .cloud__wrap {
+    /*Add clouds contrast*/
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

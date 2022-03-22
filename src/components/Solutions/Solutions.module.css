@@ -1,0 +1,141 @@
+.solution {
+  column-count: 1;
+  column-gap: 0;
+  padding: calc(var(--row-height) * 2) var(--side-margin);
+}
+
+.solution__group {
+  display: inline-block;
+  margin-bottom: calc(var(--row-height) * 2);
+}
+
+.solution__title {
+  margin: 0 0 calc(var(--row-height) * 1);
+
+  font-family: var(--font-title);
+  color: var(--color-text-gray);
+  font-size: var(--fs-subtitle-3);
+  font-weight: 400;
+}
+
+.solution__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.solution__icon {
+  --icon-size: 9.444444444vw;
+
+  width: calc(var(--icon-size));
+  height: calc(var(--icon-size));
+  margin-right: 6.944444444vw;
+  margin-bottom: 4.722222222vw;
+}
+.solution__icon_laravel {
+  width: calc(var(--icon-size) * 3.65);
+}
+.solution__icon_php {
+  width: calc(var(--icon-size) * 1.8875);
+}
+.solution__icon_mysql {
+  width: calc(var(--icon-size) * 1.925);
+}
+.solution__icon_mongodb {
+  width: calc(var(--icon-size) * 3.5);
+}
+.solution__icon_node {
+  width: calc(var(--icon-size) * 1.625);
+}
+.solution__icon_sass {
+  width: calc(var(--icon-size) * 1.3375);
+}
+.solution__icon_react {
+  width: calc(var(--icon-size) * 1.125);
+}
+.solution__icon_vue {
+  width: calc(var(--icon-size) * 1.125);
+}
+.solution__icon_less {
+  width: calc(var(--icon-size) * 2);
+}
+.solution__icon_pug {
+  width: calc(var(--icon-size) * 1.625);
+}
+.solution__icon_stripe {
+  width: calc(var(--icon-size) * 2.3875);
+}
+.solution__icon_redmine {
+  width: calc(var(--icon-size) * 3.325);
+  height: calc(var(--icon-size) * 0.75);
+}
+.solution__icon_basecamp {
+  width: calc(var(--icon-size) * 3.275);
+  height: calc(var(--icon-size) * 0.75);
+}
+.solution__icon_asana {
+  width: calc(var(--icon-size) * 1.1375);
+  height: calc(var(--icon-size) * 0.75);
+}
+.solution__icon_trello {
+  width: calc(var(--icon-size) * 2.4375);
+  height: calc(var(--icon-size) * 0.75);
+}
+.solution__icon_slack {
+  width: calc(var(--icon-size) * 2.625);
+  height: calc(var(--icon-size) * 0.75);
+}
+.solution__icon_bitbucket {
+  width: calc(var(--icon-size) * 1.1);
+}
+.solution__icon_gitlab {
+  width: calc(var(--icon-size) * 1.1);
+}
+
+@media screen and (min-width: 600px) {
+  .solution {
+    column-count: 2;
+    column-gap: 2.5rem;
+    padding: calc(var(--row-height) * 2) var(--side-margin)
+      calc(var(--row-height) * 2);
+  }
+
+  .solution__group {
+    display: inline-block;
+    margin-bottom: var(--row-height);
+  }
+  .solution__group:last-child {
+    margin-bottom: 0;
+  }
+
+  .solution__icon {
+    --icon-size: 4.1666667vw;
+
+    margin-right: 2.604166vw;
+    margin-bottom: 2.34375vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .solution {
+    column-gap: 3.75rem;
+    padding: calc(var(--row-height) * 5) var(--side-margin)
+      calc(var(--row-height) * 2);
+  }
+
+  .solution__icon {
+    margin-right: 3.125vw;
+    margin-bottom: 2.083333333vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .solution {
+    padding: calc(var(--row-height) * 6) var(--side-margin)
+      calc(var(--row-height) * 2);
+  }
+
+  .solution__title {
+    margin: 0 0 calc(var(--row-height) * 2);
+  }
+}

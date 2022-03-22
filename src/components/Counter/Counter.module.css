@@ -1,0 +1,32 @@
+.counter {
+  position: relative;
+  padding: var(--row-height) var(--side-margin);
+  background-color: var(--color-light-gray);
+}
+
+.counter__background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(var(--view-average) * (-14.333333));
+  bottom: calc(var(--view-average) * (-11.666666));
+  z-index: 300;
+
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+
+  pointer-events: none;
+  will-change: background-position;
+}
+.counter__background_1 {
+  background-image: url('/counter/counter-cloud-1.png');
+}
+.counter__background_2 {
+  background-image: url('/counter/counter-cloud-2.png');
+}
+
+.counter__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

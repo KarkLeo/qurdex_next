@@ -1,0 +1,17 @@
+.footer {
+  background-color: var(--color-main-gray);
+  padding: var(--row-height) var(--side-margin);
+}
+.footer__copyright {
+  margin: 0;
+
+  font-size: var(--fs-text-1);
+  color: var(--color-text-gray);
+  text-align: left;
+}
+
+@media (min-width: 1200px) {
+  .footer__copyright {
+    text-align: right;
+  }
+}

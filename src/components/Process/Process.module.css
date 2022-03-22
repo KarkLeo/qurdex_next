@@ -1,0 +1,61 @@
+.process {
+  position: relative;
+  z-index: 10;
+
+  padding: calc(var(--row-height) * 3) 0 calc(var(--row-height) * 4);
+
+  background-color: var(--color-main-gray);
+}
+.process__cloud {
+  display: none;
+}
+
+.process__title {
+  margin: 0 var(--side-margin) calc(var(--row-height) * 2);
+}
+.process__wrapper {
+  position: relative;
+  z-index: 20;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 var(--side-margin);
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  .process {
+    padding: calc(var(--row-height) * 5) 0;
+
+    overflow: hidden;
+  }
+  .process__title {
+    margin: 0 var(--side-margin) calc(var(--row-height) * 4);
+  }
+  .process__cloud {
+    position: absolute;
+    left: 0;
+    bottom: calc(var(--row-height) * (-7));
+    z-index: 10;
+
+    display: block;
+    width: 150%;
+    height: calc(var(--view-average) * 100);
+
+    background-image: url('/services-cloud.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    will-change: background-position;
+    opacity: 0.4;
+    transition: var(--transition-background);
+  }
+}
+
+@media (min-width: 1440px) {
+  .process {
+    padding: calc(var(--row-height) * 6) 0;
+  }
+  .process__title {
+    margin: 0 var(--side-margin) calc(var(--row-height) * 5);
+  }
+}
